@@ -6,7 +6,7 @@ var axios = require("axios");
 
 function writeFile(data) {
   var json = JSON.stringify(data);
-  fs.writeFileSync("weather.json", json);
+  fs.writeFileSync("./weather.json", json);
 }
 
 export default (req, res) => {
