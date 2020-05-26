@@ -74,9 +74,9 @@ export default (req, res) => {
     }
 
     console.log(JSON.stringify(obj));
-
-    writeFile(obj);
+    res.status(200).json(obj);
+    //writeFile(obj);
   });
 
-  res.status(200).json({ text: 'Updated Weather' })
+  //res.status(200).json({ text: 'Updated Weather' })
 }
